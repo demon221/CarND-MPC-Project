@@ -17,12 +17,12 @@ The state of the vehicle model is described with positon `x`, position `y`, orie
 
 The vehicle's kinematic model equations:
 
-x[t+1]   = x[t] + v * cos(psi) * dt,
-y[t+1]   = y[t] + v * sin(psi) * dt,
-psi[t+1] = psi[t] + v/Lf * delta[t] * dt,
-v[t+1]   = v[t] + a[t] * dt,
-cte[t+1] = f(x[t]) - y[t] + v * sin(epsi[t]) * dt,
-epsi[t+1] = psi[t] - psides[t] + v/Lf * delta[t] * dt.
+- x[t+1]   = x[t] + v * cos(psi) * dt,
+- y[t+1]   = y[t] + v * sin(psi) * dt,
+- psi[t+1] = psi[t] + v/Lf * delta[t] * dt,
+- v[t+1]   = v[t] + a[t] * dt,
+- cte[t+1] = f(x[t]) - y[t] + v * sin(epsi[t]) * dt,
+- epsi[t+1] = psi[t] - psides[t] + v/Lf * delta[t] * dt.
 
 where Lf is the length from front to centor of gravity of the vehicle.
 
